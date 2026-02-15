@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b16u1g5jxnu2e"]
+
+[ext_resource type="SpriteFrames" uid="uid://ebtphrpurmbx" path="res://skins/default.tres" id="1_cegc5"]
+
+[node name="default" type="AnimatedSprite2D"]
+scale = Vector2(2.75, 2.75)
+sprite_frames = ExtResource("1_cegc5")
+animation = &"up"

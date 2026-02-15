@@ -38,17 +38,22 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Pixil-frame-0(2)" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(965.25, 569.016)
-scale = Vector2(21.335, 12.2603)
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_top = 159.0
+offset_bottom = 159.0
+grow_horizontal = 2
+metadata/_edit_use_anchors_ = true
 
-[node name="Idle" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(960, 228)
+[node name="Idle" type="Sprite2D" parent="CanvasLayer/Control"]
 scale = Vector2(2, 2)
 texture = ExtResource("2_kdmts")
 
-[node name="Pixil-frame-0(1)" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(960, 364)
+[node name="Pixil-frame-0(1)" type="Sprite2D" parent="CanvasLayer/Control"]
+position = Vector2(2, 138)
 scale = Vector2(2, 2)
 texture = ExtResource("3_0auqf")
 

@@ -21,6 +21,7 @@ config/icon="uid://c74g4a48rg3ax"
 GlobleSound="*res://scripts/globle_sound.gd"
 Global="*res://scripts/global.gd"
 GlobalCurrency="*res://scripts/Global_currency.gd"
+GlobalSkin="*res://scripts/Global_skin.gd"
 
 [display]
 
