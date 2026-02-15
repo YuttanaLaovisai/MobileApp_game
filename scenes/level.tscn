@@ -1,0 +1,78 @@
+[gd_scene load_steps=6 format=3 uid="uid://cx6jgirqmnoxi"]
+
+[ext_resource type="Script" uid="uid://d3r702dah7upw" path="res://scripts/level.gd" id="1_mx8sn"]
+[ext_resource type="Texture2D" uid="uid://qsse861iocvd" path="res://asset/pixil-frame-0 (2).png" id="2_ppgk2"]
+[ext_resource type="FontFile" uid="uid://cys33ha6e3rft" path="res://font/FantasticBoogaloo-GDlq.ttf" id="3_2r41h"]
+[ext_resource type="Texture2D" uid="uid://dyj7u3a11bdp2" path="res://asset/pixil-frame-0 (23).png" id="4_klq6b"]
+[ext_resource type="Texture2D" uid="uid://8tbfs7mvq28q" path="res://asset/pixil-frame-0 (10).png" id="5_ppgk2"]
+
+[node name="level" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mx8sn")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Pixil-frame-0(2)" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(957, 565)
+scale = Vector2(26.82, 15.5)
+texture = ExtResource("2_ppgk2")
+
+[node name="Normal mode" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.400521
+anchor_right = 0.599479
+anchor_bottom = 0.0611111
+offset_top = 50.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_2r41h")
+theme_override_font_sizes/font_size = 65
+text = "Normal mode"
+metadata/_edit_use_anchors_ = true
+
+[node name="back" type="Button" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_right = 0.05625
+anchor_bottom = 0.1
+offset_left = 50.0
+offset_top = 50.0
+icon = ExtResource("5_ppgk2")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_right = 0.166667
+anchor_bottom = 0.296296
+offset_left = 100.0
+offset_top = 200.0
+metadata/_edit_use_anchors_ = true
+
+[node name="lvl1" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_2r41h")
+theme_override_font_sizes/font_size = 85
+text = "1"
+icon = ExtResource("4_klq6b")
+flat = true
+icon_alignment = 1
+
+[node name="lvl2" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_2r41h")
+theme_override_font_sizes/font_size = 85
+text = "2"
+icon = ExtResource("4_klq6b")
+flat = true
+icon_alignment = 1
+
+[connection signal="pressed" from="CanvasLayer/back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/lvl1" to="." method="_on_lvl_1_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/lvl2" to="." method="_on_lvl_2_pressed"]
