@@ -1,0 +1,54 @@
+[gd_scene load_steps=12 format=3 uid="uid://5b1vetkq5wbf"]
+
+[ext_resource type="Texture2D" uid="uid://cdc6p8d563p2w" path="res://addons/big/dog/Idle (1).png" id="1_10ts0"]
+[ext_resource type="Texture2D" uid="uid://chj7diks25v6c" path="res://addons/big/dog/Idle (2).png" id="2_v2vdb"]
+[ext_resource type="Texture2D" uid="uid://bxbc2ifgbb2rs" path="res://addons/big/dog/Idle (3).png" id="3_xn033"]
+[ext_resource type="Texture2D" uid="uid://tcwgfxwvvmde" path="res://addons/big/dog/Idle (4).png" id="4_4xr43"]
+[ext_resource type="Texture2D" uid="uid://cm2erw7dykej5" path="res://addons/big/dog/Idle (5).png" id="5_wbq0t"]
+[ext_resource type="Texture2D" uid="uid://byqs2vley388s" path="res://addons/big/dog/Idle (6).png" id="6_2prdj"]
+[ext_resource type="Texture2D" uid="uid://m4ewcy4x2e3u" path="res://addons/big/dog/Idle (7).png" id="7_psjst"]
+[ext_resource type="Texture2D" uid="uid://cg10tihx71nf" path="res://addons/big/dog/Idle (8).png" id="8_unw3a"]
+[ext_resource type="Texture2D" uid="uid://yldntdwkl8ry" path="res://addons/big/dog/Idle (9).png" id="9_mal8d"]
+[ext_resource type="Texture2D" uid="uid://cofcsqijs7gql" path="res://addons/big/dog/Idle (10).png" id="10_w6m37"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e7owp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_10ts0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_v2vdb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xn033")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4xr43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wbq0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2prdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_psjst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_unw3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mal8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_w6m37")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="bigdog" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_e7owp")
+autoplay = "default"

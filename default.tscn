@@ -5,4 +5,4 @@
 [node name="default" type="AnimatedSprite2D"]
 scale = Vector2(2.75, 2.75)
 sprite_frames = ExtResource("1_cegc5")
-animation = &"up"
+animation = &"idle"

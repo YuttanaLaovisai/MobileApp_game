@@ -61,12 +61,12 @@ func _physics_process(delta: float) -> void:
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
+		if chase:
+			GlobleSound.play_sound("res://asset/freesound_community-negative_beeps-6008.mp3")
 		chase = false
 		print(speed)
 		player.stop()
 		emit_signal("player_caught")
-		if chase:
-			GlobleSound.play_sound("res://asset/freesound_community-negative_beeps-6008.mp3")
 
 @onready var player: AudioStreamPlayer = AudioStreamPlayer.new()
 

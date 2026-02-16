@@ -1,8 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://dgc0br40wtnlh"]
+[gd_scene load_steps=8 format=3 uid="uid://dgc0br40wtnlh"]
 
 [ext_resource type="Script" uid="uid://cc5m5744mubyu" path="res://shop.gd" id="1_blqjs"]
+[ext_resource type="Script" uid="uid://cmf0ko8jo48ny" path="res://scroll_container.gd" id="2_6lah5"]
 [ext_resource type="FontFile" uid="uid://cys33ha6e3rft" path="res://font/FantasticBoogaloo-GDlq.ttf" id="2_fgaav"]
 [ext_resource type="Texture2D" uid="uid://8tbfs7mvq28q" path="res://asset/pixil-frame-0 (10).png" id="3_6lah5"]
+[ext_resource type="PackedScene" uid="uid://cb0fuh3d1xlcf" path="res://skins/default_card.tscn" id="3_8kdgp"]
+[ext_resource type="PackedScene" uid="uid://dkdy4n0x418e7" path="res://skins/cat_card.tscn" id="3_gmb2m"]
+[ext_resource type="PackedScene" uid="uid://4usv2rnqwyyc" path="res://skins/dog_card.tscn" id="8_p5a0g"]
 
 [node name="Shop" type="Node2D"]
 script = ExtResource("1_blqjs")
@@ -16,26 +20,29 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
-anchors_preset = 14
-anchor_top = 0.5
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer"]
+anchors_preset = 15
 anchor_right = 1.0
-anchor_bottom = 0.5
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+vertical_scroll_mode = 0
+script = ExtResource("2_6lah5")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
 alignment = 1
 
-[node name="default" type="Button" parent="CanvasLayer/HBoxContainer"]
+[node name="default_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("3_8kdgp")]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_fgaav")
-theme_override_font_sizes/font_size = 40
-text = "default"
 
-[node name="cat" type="Button" parent="CanvasLayer/HBoxContainer"]
+[node name="cat_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("3_gmb2m")]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_fgaav")
-theme_override_font_sizes/font_size = 40
-text = "cat"
+
+[node name="dog_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("8_p5a0g")]
+layout_mode = 2
 
 [node name="back" type="Button" parent="CanvasLayer"]
 offset_left = 50.0
@@ -52,23 +59,29 @@ icon_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer"]
-visible = false
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -271.5
-offset_top = -121.0
-offset_right = 271.5
-offset_bottom = 121.0
+anchors_preset = -1
+anchor_left = 0.478646
+anchor_right = 0.521354
+anchor_bottom = 0.037963
+offset_top = 50.0
+offset_right = 6.10352e-05
 grow_horizontal = 2
-grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_fgaav")
-theme_override_font_sizes/font_size = 181
-text = "กำลังทำ"
+theme_override_font_sizes/font_size = 100
+text = "Shop"
+horizontal_alignment = 1
 
-[connection signal="pressed" from="CanvasLayer/HBoxContainer/default" to="." method="_on_default_pressed"]
-[connection signal="pressed" from="CanvasLayer/HBoxContainer/cat" to="." method="_on_cat_pressed"]
+[node name="coin" type="Label" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 50.0
+offset_right = -50.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_fgaav")
+theme_override_font_sizes/font_size = 40
+text = "Coin : "
+horizontal_alignment = 2
+
 [connection signal="pressed" from="CanvasLayer/back" to="." method="_on_back_pressed"]

@@ -2,9 +2,8 @@ extends Control
 
 @onready var normal: Button = $CanvasLayer/VBoxContainer/normal
 @onready var Endless: Button = $"CanvasLayer/VBoxContainer/Endless mode"
-#@onready var hard: Button = $"CanvasLayer/VBoxContainer/Endless mode/VBoxContainer/hard"
-#@onready var medium: Button = $"CanvasLayer/VBoxContainer/Endless mode/VBoxContainer/medium"
-#@onready var Easy: Button = $"CanvasLayer/VBoxContainer/Endless mode/VBoxContainer/Easy"
+@onready var shop: Button = $CanvasLayer/VBoxContainer/Shop
+
 
 @onready var exit: Button = $CanvasLayer/exit
 
@@ -14,30 +13,13 @@ var is_first_click = true
 func _ready() -> void:
 	Endless.focus_mode = Control.FOCUS_NONE
 	exit.focus_mode = Control.FOCUS_NONE
-	#Easy.focus_mode = Control.FOCUS_NONE
-	#medium.focus_mode = Control.FOCUS_NONE
-	#hard.focus_mode = Control.FOCUS_NONE
+	shop.focus_mode = Control.FOCUS_NONE
 	normal.focus_mode = Control.FOCUS_NONE
-	#Easy.visible = false
-	#medium.visible = false
-	#hard.visible = false
 	Global.load_progress()
 
 func _on_endless_mode_pressed() -> void:
 	GlobleSound.play_sound("res://asset/btnSound.mp3")
 	get_tree().change_scene_to_file("res://scenes/mainEasy.tscn")
-	#if is_first_click:
-		#is_first_click = false
-		#GlobleSound.play_sound("res://asset/btnSound.mp3")
-		##Easy.visible = true
-		##medium.visible = true
-		##hard.visible = true
-	#else:
-		#is_first_click = true
-		#GlobleSound.play_sound("res://asset/btnSound.mp3")
-		##Easy.visible = false
-		##medium.visible = false
-		##hard.visible = false
 
 
 func _on_normal_mode_pressed() -> void:
