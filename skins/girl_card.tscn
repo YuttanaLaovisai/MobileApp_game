@@ -1,0 +1,152 @@
+[gd_scene load_steps=24 format=3 uid="uid://rrxwa1727j2p"]
+
+[ext_resource type="Script" uid="uid://cns7xuth1cs7f" path="res://skins/default_card.gd" id="1_n5jl8"]
+[ext_resource type="Texture2D" uid="uid://b00j6gjk56p4h" path="res://asset/pixil-frame-0 (27).png" id="2_1ari6"]
+[ext_resource type="FontFile" uid="uid://cys33ha6e3rft" path="res://font/FantasticBoogaloo-GDlq.ttf" id="3_350e0"]
+[ext_resource type="Shader" uid="uid://dcfstswhx16wn" path="res://outline.gdshader" id="4_oa1la"]
+[ext_resource type="Texture2D" uid="uid://ciwh5m5pou70o" path="res://addons/big/png/Idle (1).png" id="5_djrwl"]
+[ext_resource type="Texture2D" uid="uid://dhuiwpevyp4y4" path="res://addons/big/png/Idle (2).png" id="6_gn6ow"]
+[ext_resource type="Texture2D" uid="uid://bhpjtmyiqjwl7" path="res://addons/big/png/Idle (3).png" id="7_3a1ij"]
+[ext_resource type="Texture2D" uid="uid://dpgjd5jj2jojy" path="res://addons/big/png/Idle (4).png" id="8_p5deb"]
+[ext_resource type="Texture2D" uid="uid://kgltcamii7ym" path="res://addons/big/png/Idle (5).png" id="9_bpmy4"]
+[ext_resource type="Texture2D" uid="uid://b2e1cisjp28xv" path="res://addons/big/png/Idle (6).png" id="10_2lcvp"]
+[ext_resource type="Texture2D" uid="uid://q330wjotro63" path="res://addons/big/png/Idle (7).png" id="11_ygxf2"]
+[ext_resource type="Texture2D" uid="uid://x3cfmuw7osye" path="res://addons/big/png/Idle (8).png" id="12_3lfv8"]
+[ext_resource type="Texture2D" uid="uid://12201our86b3" path="res://addons/big/png/Idle (9).png" id="13_8i0ev"]
+[ext_resource type="Texture2D" uid="uid://cprpk0fwl6ai" path="res://addons/big/png/Idle (10).png" id="14_iutj3"]
+[ext_resource type="Texture2D" uid="uid://yjs3vbtii7dr" path="res://addons/big/png/Idle (11).png" id="15_4i8c2"]
+[ext_resource type="Texture2D" uid="uid://dat3l833mrssb" path="res://addons/big/png/Idle (12).png" id="16_4aj58"]
+[ext_resource type="Texture2D" uid="uid://cdopdgh8rrmnx" path="res://addons/big/png/Idle (13).png" id="17_wsiw6"]
+[ext_resource type="Texture2D" uid="uid://c2chophgwkvtt" path="res://addons/big/png/Idle (14).png" id="18_w4efc"]
+[ext_resource type="Texture2D" uid="uid://chtg04bxhw0md" path="res://addons/big/png/Idle (15).png" id="19_ogcvx"]
+[ext_resource type="Texture2D" uid="uid://b5sls5h3eikja" path="res://addons/big/png/Idle (16).png" id="20_5a8u6"]
+[ext_resource type="Texture2D" uid="uid://cnv3rbbqsksun" path="res://asset/pixil-frame-0 (21).png" id="41_shr2j"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uoyad"]
+shader = ExtResource("4_oa1la")
+shader_parameter/outline_color = Color(0, 0, 0, 1)
+shader_parameter/outline_size = 10.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qlgk6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_djrwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_gn6ow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3a1ij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_p5deb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bpmy4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_2lcvp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ygxf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_3lfv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8i0ev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_iutj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4i8c2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4aj58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_wsiw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_w4efc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ogcvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_5a8u6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[node name="girl_card" type="Control"]
+custom_minimum_size = Vector2(350, 500)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_n5jl8")
+skin_name = "cat"
+skin_path = "res://skins/cat.tres"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 350.0
+offset_bottom = 500.0
+texture = ExtResource("2_1ari6")
+
+[node name="Label" type="Label" parent="TextureRect"]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -83.0
+offset_top = 86.0
+offset_right = 83.0
+offset_bottom = 127.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_350e0")
+theme_override_font_sizes/font_size = 40
+text = "Girl"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_uoyad")
+position = Vector2(168, 156)
+scale = Vector2(0.492187, 0.492187)
+sprite_frames = SubResource("SpriteFrames_qlgk6")
+autoplay = "default"
+frame_progress = 0.265942
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -154.0
+offset_top = -102.0
+offset_right = 154.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_350e0")
+theme_override_font_sizes/font_size = 36
+theme_override_icons/icon = ExtResource("41_shr2j")
+text = "Used"
+flat = true
+icon_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

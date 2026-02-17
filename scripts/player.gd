@@ -12,6 +12,8 @@ func _ready() -> void:
 	set_physics_process(false)   # ปิดก่อน
 
 	GlobalSkin.load_skin()
+	if GlobalSkin.current_skin == "res://skins/girl.tres":
+		sprite.material = preload("res://skins/girlShader.tres")
 	apply_skin()
 
 	set_physics_process(true)    # เปิดหลังโหลดเสร็จ

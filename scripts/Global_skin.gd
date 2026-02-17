@@ -8,7 +8,8 @@ var current_skin: String = "res://skins/default.tres"
 var unlocked_skins := {
 	"default": true,
 	"cat": false,
-	"dog": false
+	"dog": false,
+	"girl": false
 }
 
 
@@ -19,7 +20,8 @@ func reset():
 	unlocked_skins = {
 		"default": true,
 		"cat": false,
-		"dog": false
+		"dog": false,
+		"girl": false
 	}
 
 	current_skin = "res://skins/default.tres"

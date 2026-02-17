@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci3jeboufhdbv"]
+
+[ext_resource type="Material" uid="uid://bx0yererd3vi5" path="res://skins/girlShader.tres" id="1_km2mf"]
+[ext_resource type="SpriteFrames" uid="uid://tctgacg2tst6" path="res://skins/girl.tres" id="2_km2mf"]
+
+[node name="girl" type="AnimatedSprite2D"]
+material = ExtResource("1_km2mf")
+sprite_frames = ExtResource("2_km2mf")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.289558

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dgc0br40wtnlh"]
+[gd_scene load_steps=9 format=3 uid="uid://dgc0br40wtnlh"]
 
 [ext_resource type="Script" uid="uid://cc5m5744mubyu" path="res://shop.gd" id="1_blqjs"]
 [ext_resource type="Script" uid="uid://cmf0ko8jo48ny" path="res://scroll_container.gd" id="2_6lah5"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://8tbfs7mvq28q" path="res://asset/pixil-frame-0 (10).png" id="3_6lah5"]
 [ext_resource type="PackedScene" uid="uid://cb0fuh3d1xlcf" path="res://skins/default_card.tscn" id="3_8kdgp"]
 [ext_resource type="PackedScene" uid="uid://dkdy4n0x418e7" path="res://skins/cat_card.tscn" id="3_gmb2m"]
+[ext_resource type="PackedScene" uid="uid://rrxwa1727j2p" path="res://skins/girl_card.tscn" id="6_myf4l"]
 [ext_resource type="PackedScene" uid="uid://4usv2rnqwyyc" path="res://skins/dog_card.tscn" id="8_p5a0g"]
 
 [node name="Shop" type="Node2D"]
@@ -40,9 +41,17 @@ layout_mode = 2
 
 [node name="cat_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("3_gmb2m")]
 layout_mode = 2
+price = 299
 
 [node name="dog_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("8_p5a0g")]
 layout_mode = 2
+price = 299
+
+[node name="girl_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("6_myf4l")]
+layout_mode = 2
+skin_name = "girl"
+skin_path = "res://skins/girl.tres"
+price = 699
 
 [node name="back" type="Button" parent="CanvasLayer"]
 offset_left = 50.0
