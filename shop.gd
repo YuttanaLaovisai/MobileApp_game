@@ -4,7 +4,7 @@ extends Node2D
 @onready var coin: Label = $CanvasLayer/coin
 
 func _ready() -> void:
-	GlobalSkin.reset()
+	#GlobalSkin.reset()
 	GlobalCurrency.coin += 1000
 	back.focus_mode = Control.FOCUS_NONE
 

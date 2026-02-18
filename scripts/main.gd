@@ -17,7 +17,6 @@ var bonus_time := 0
 
 
 func _ready():
-	Global.reset()
 	for point in get_tree().get_nodes_in_group("point"):
 		point.connect("point_collected", Callable(self, "_on_point_collected"))
 	$CanvasLayer/back.focus_mode = Control.FOCUS_NONE

@@ -20,7 +20,9 @@ func _process(delta: float) -> void:
 		$ProgressBar.value = steal_time
 		if steal_time >= steal_duration:
 			emit_signal("stolen_signal")
+			steal_time = 0
 			stealing = false
+			
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):

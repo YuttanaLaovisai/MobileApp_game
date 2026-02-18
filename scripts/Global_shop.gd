@@ -17,6 +17,7 @@ func unlock_skin(name: String, price: int) -> bool:
 		unlocked_skins[name] = true
 		save_data()
 		return true
+
 	return false
 
 

@@ -113,6 +113,8 @@ text = "Shop
 flat = true
 icon_alignment = 1
 
+[node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer/VBoxContainer"]
+
 [node name="exit" type="Button" parent="CanvasLayer"]
 anchors_preset = 8
 anchor_left = 0.5

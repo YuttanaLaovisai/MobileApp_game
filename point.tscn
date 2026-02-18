@@ -54,7 +54,7 @@ animations = [{
 }]
 
 [node name="point" type="Area2D" groups=["point"]]
-scale = Vector2(1.5, 1.5)
+scale = Vector2(2, 2)
 script = ExtResource("1_40ent")
 value = 1
 

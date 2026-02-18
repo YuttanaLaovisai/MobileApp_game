@@ -27,9 +27,10 @@ func _on_button_pressed() -> void:
 			GlobleSound.play_sound("res://asset/spinning_coin/freesound_crunchpixstudio-drop-coin-384921.mp3")
 			GlobalCurrency.coin -= price
 			GlobalCurrency.save_coin()
-
 			GlobalSkin.unlock_skin(skin_name)
 			GlobalSkin.set_skin(skin_path)
+		else:
+			GlobleSound.play_sound("res://asset/universfield-error-08-206492.mp3")
 
 	update_button()
 
