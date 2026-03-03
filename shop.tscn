@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dgc0br40wtnlh"]
+[gd_scene load_steps=11 format=3 uid="uid://dgc0br40wtnlh"]
 
 [ext_resource type="Script" uid="uid://cc5m5744mubyu" path="res://shop.gd" id="1_blqjs"]
 [ext_resource type="Script" uid="uid://cmf0ko8jo48ny" path="res://scroll_container.gd" id="2_6lah5"]
@@ -7,7 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://cb0fuh3d1xlcf" path="res://skins/default_card.tscn" id="3_8kdgp"]
 [ext_resource type="PackedScene" uid="uid://dkdy4n0x418e7" path="res://skins/cat_card.tscn" id="3_gmb2m"]
 [ext_resource type="PackedScene" uid="uid://rrxwa1727j2p" path="res://skins/girl_card.tscn" id="6_myf4l"]
+[ext_resource type="PackedScene" uid="uid://cb0m80psjb2yf" path="res://skins/gai_card.tscn" id="7_p5a0g"]
 [ext_resource type="PackedScene" uid="uid://4usv2rnqwyyc" path="res://skins/dog_card.tscn" id="8_p5a0g"]
+[ext_resource type="PackedScene" uid="uid://djbsv86mltgb1" path="res://special_card.tscn" id="8_xqmyw"]
 
 [node name="Shop" type="Node2D"]
 script = ExtResource("1_blqjs")
@@ -38,59 +40,34 @@ alignment = 1
 
 [node name="default_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("3_8kdgp")]
 layout_mode = 2
-mouse_filter = 1
+mouse_filter = 2
 
 [node name="cat_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("3_gmb2m")]
 layout_mode = 2
-mouse_filter = 1
+mouse_filter = 2
 price = 299
 
 [node name="dog_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("8_p5a0g")]
 layout_mode = 2
-mouse_filter = 1
+mouse_filter = 2
 price = 299
 
 [node name="girl_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("6_myf4l")]
 layout_mode = 2
-mouse_filter = 1
+mouse_filter = 2
 skin_name = "girl"
 skin_path = "res://skins/girl.tres"
 price = 699
 
-[node name="girl_card2" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("6_myf4l")]
+[node name="gai_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("7_p5a0g")]
 layout_mode = 2
-mouse_filter = 1
-skin_name = "girl"
-skin_path = "res://skins/girl.tres"
-price = 699
+mouse_filter = 2
+skin_name = "gai"
+skin_path = "res://skins/gai.tres"
+price = 199
 
-[node name="girl_card3" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("6_myf4l")]
+[node name="special_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("8_xqmyw")]
 layout_mode = 2
-mouse_filter = 1
-skin_name = "girl"
-skin_path = "res://skins/girl.tres"
-price = 699
-
-[node name="girl_card4" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("6_myf4l")]
-layout_mode = 2
-mouse_filter = 1
-skin_name = "girl"
-skin_path = "res://skins/girl.tres"
-price = 699
-
-[node name="girl_card5" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("6_myf4l")]
-layout_mode = 2
-mouse_filter = 1
-skin_name = "girl"
-skin_path = "res://skins/girl.tres"
-price = 699
-
-[node name="girl_card6" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("6_myf4l")]
-layout_mode = 2
-mouse_filter = 1
-skin_name = "girl"
-skin_path = "res://skins/girl.tres"
-price = 699
 
 [node name="back" type="Button" parent="CanvasLayer"]
 offset_left = 50.0

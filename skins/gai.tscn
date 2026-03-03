@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://8bxm376povu6"]
+
+[ext_resource type="SpriteFrames" uid="uid://cvi6b3wgh62q" path="res://skins/gai.tres" id="1_0yv00"]
+
+[node name="Gai" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1_0yv00")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.673055

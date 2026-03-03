@@ -14,6 +14,10 @@ func _ready() -> void:
 	GlobalSkin.load_skin()
 	if GlobalSkin.current_skin == "res://skins/girl.tres":
 		sprite.material = preload("res://skins/girlShader.tres")
+	if GlobalSkin.current_skin == "res://skins/special_card.tres":
+		sprite.scale = Vector2(2, 2)
+	else:
+		sprite.scale = Vector2(1, 1)
 	apply_skin()
 
 	set_physics_process(true)    # เปิดหลังโหลดเสร็จ

@@ -7,6 +7,7 @@ extends Node2D
 @onready var highesttime_label = $CanvasLayer/Label2
 @onready var eggg = $player/egg
 @onready var coin: Label = $CanvasLayer/coin
+@export var is_main = false
 
 var is_holding_egg := false
 var highest_time := 0.0
@@ -22,23 +23,16 @@ func _ready():
 	$CanvasLayer/back.focus_mode = Control.FOCUS_NONE
 	$"CanvasLayer/go back".focus_mode = Control.FOCUS_NONE
 
-	# connect signal
 	egg.connect("stolen_signal", Callable(self, "_on_egg_stolen"))
 	chicken.connect("player_caught", Callable(self, "_on_player_caught"))  
 
 	chicken.target = player
 
-	# โหลด highest score จาก Global
 	highest_time = Global.hightest_score
 
 	var s = "%.2f" % highest_time
 	highesttime_label.text = "High score : " + str(s)
 
-func _on_point_collected():
-	bonus_time += 5
-	var s = "%.2f" % (hold_time+bonus_time)
-	time_label.text = "Holding Egg : " + str(s)
-	print("a")
 
 
 func _process(delta: float) -> void:
@@ -107,14 +101,18 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-
 	if body.is_in_group("player"):
 		exit_area = false
 
 
-
 func _on_go_back_pressed() -> void:
-
 	GlobleSound.play_sound("res://asset/btnSound.mp3")
-
 	$player.set_deferred("global_position", $playerHome.global_position)
+
+@export var night:PackedScene
+
+func daynight():
+	var toggle = true
+	if toggle and hold_time == 30:
+		toggle = not toggle
+		pass

@@ -1,0 +1,83 @@
+[gd_scene load_steps=7 format=3 uid="uid://cb0m80psjb2yf"]
+
+[ext_resource type="Script" uid="uid://cns7xuth1cs7f" path="res://skins/default_card.gd" id="1_ca83t"]
+[ext_resource type="Texture2D" uid="uid://b00j6gjk56p4h" path="res://asset/pixil-frame-0 (27).png" id="2_b8vj1"]
+[ext_resource type="FontFile" uid="uid://cys33ha6e3rft" path="res://font/FantasticBoogaloo-GDlq.ttf" id="3_xr8l5"]
+[ext_resource type="Texture2D" uid="uid://b05ix2jisc6i" path="res://asset/idle.png" id="4_vcr83"]
+[ext_resource type="Texture2D" uid="uid://cnv3rbbqsksun" path="res://asset/pixil-frame-0 (21).png" id="5_yiu0c"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j6wak"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_vcr83")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="gai_card" type="Control"]
+custom_minimum_size = Vector2(350, 500)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ca83t")
+skin_name = "cat"
+skin_path = "res://skins/cat.tres"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 350.0
+offset_bottom = 500.0
+texture = ExtResource("2_b8vj1")
+
+[node name="Label" type="Label" parent="TextureRect"]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -83.0
+offset_top = 86.0
+offset_right = 83.0
+offset_bottom = 127.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_xr8l5")
+theme_override_font_sizes/font_size = 40
+text = "Gai"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(166, 173)
+scale = Vector2(2.54805, 2.54805)
+sprite_frames = SubResource("SpriteFrames_j6wak")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -154.0
+offset_top = -102.0
+offset_right = 154.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_xr8l5")
+theme_override_font_sizes/font_size = 36
+theme_override_icons/icon = ExtResource("5_yiu0c")
+text = "Used"
+flat = true
+icon_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

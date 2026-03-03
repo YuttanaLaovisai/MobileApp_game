@@ -4,6 +4,7 @@ signal player_caught
 
 @export var speed: float = 200
 @onready var agent: NavigationAgent2D = $NavigationAgent2D
+@onready var player: AudioStreamPlayer = AudioStreamPlayer.new()
 
 var target: Node2D = null
 var chase: bool = false
@@ -52,7 +53,6 @@ func _physics_process(delta: float) -> void:
 				$AnimatedSprite2D.animation = "run"
 				$AnimatedSprite2D.play()
 				play_loop("res://asset/SUBWAY SURFERS (Main Theme).mp3")
-				
 			$AnimatedSprite2D.flip_h = dir.x < 0
 		else:
 			if $AnimatedSprite2D.animation != "idle":
@@ -63,12 +63,13 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		if chase:
 			GlobleSound.play_sound("res://asset/freesound_community-negative_beeps-6008.mp3")
+		else:
+			GlobleSound.stop()
 		chase = false
 		print(speed)
 		player.stop()
 		emit_signal("player_caught")
 
-@onready var player: AudioStreamPlayer = AudioStreamPlayer.new()
 
 func play_loop(path: String):
 

@@ -9,7 +9,9 @@ var unlocked_skins := {
 	"default": true,
 	"cat": false,
 	"dog": false,
-	"girl": false
+	"girl": false,
+	"gai": false,
+	"special": false
 }
 
 
@@ -21,7 +23,9 @@ func reset():
 		"default": true,
 		"cat": false,
 		"dog": false,
-		"girl": false
+		"girl": false,
+		"gai": false,
+		"special": false
 	}
 
 	current_skin = "res://skins/default.tres"

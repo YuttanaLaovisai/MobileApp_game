@@ -124,7 +124,7 @@ position = Vector2(168, 156)
 scale = Vector2(0.492187, 0.492187)
 sprite_frames = SubResource("SpriteFrames_qlgk6")
 autoplay = "default"
-frame_progress = 0.265942
+frame_progress = 0.976688
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1

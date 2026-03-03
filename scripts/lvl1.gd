@@ -5,6 +5,8 @@ extends Node2D
 @onready var egg = $egg
 @onready var eggg = $player/egg
 
+@export var unlock_level:int
+
 var is_holding_egg := false
 var highest_time := 0.0
 var hold_time := 0.0
@@ -50,11 +52,13 @@ func _on_back_pressed() -> void:
 	GlobleSound.play_sound("res://asset/btnSound.mp3")
 	get_tree().change_scene_to_file("res://scenes/level.tscn")
 
-func _on_area_2d_body_entered(body: Node2D) -> void:
+func _on_area_2d_body_entered(body: Node2D) -> void:#home
 	if is_holding_egg and body.is_in_group("player"):
 		chicken.chase = false
 		win = true
-		Global.unlock_level(2)
+		chicken.player.stop()
+		Global.unlock_level(unlock_level)
+		GlobleSound.play_sound("res://asset/floraphonic-you-win-sequence-2-183949.mp3")
 		$CanvasLayer/win_interface/CanvasLayer/win.visible = true
 
 func _on_go_back_pressed() -> void:
