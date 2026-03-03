@@ -38,7 +38,7 @@ func _on_button_pressed() -> void:
 			GlobalSkin.set_skin(skin_path)
 
 		else:
-			if Global.hightest_score > 60:
+			if Global.hightest_score > 120:
 				GlobalSkin.unlock_skin(skin_name)
 				GlobalSkin.set_skin(skin_path)
 			else:

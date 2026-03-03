@@ -39,7 +39,7 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_5xcw1")
 theme_override_font_sizes/font_size = 40
-text = "Default"
+text = "Zyra"
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
@@ -48,7 +48,7 @@ position = Vector2(181, 167)
 scale = Vector2(4.41791, 4.41791)
 sprite_frames = ExtResource("5_hecfq")
 autoplay = "idle"
-frame_progress = 0.231359
+frame_progress = 0.589119
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
