@@ -6,6 +6,7 @@ extends Node2D
 func _ready() -> void:
 	#GlobalSkin.reset()
 	GlobalCurrency.coin += 1000
+	GlobalCurrency.save_coin()
 	back.focus_mode = Control.FOCUS_NONE
 
 func _process(delta: float) -> void:
