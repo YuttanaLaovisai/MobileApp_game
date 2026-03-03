@@ -48,7 +48,7 @@ position = Vector2(181, 167)
 scale = Vector2(4.41791, 4.41791)
 sprite_frames = ExtResource("5_hecfq")
 autoplay = "idle"
-frame_progress = 0.882266
+frame_progress = 0.231359
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
