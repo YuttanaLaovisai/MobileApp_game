@@ -68,6 +68,7 @@ price = 199
 
 [node name="special_card" parent="CanvasLayer/ScrollContainer/HBoxContainer" instance=ExtResource("8_xqmyw")]
 layout_mode = 2
+mouse_filter = 2
 
 [node name="back" type="Button" parent="CanvasLayer"]
 offset_left = 50.0

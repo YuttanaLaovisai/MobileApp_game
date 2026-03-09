@@ -7,6 +7,7 @@ var player_ref: Node = null
 var stealing := false
 var steal_time := 0.0
 var steal_duration := 3.0
+var is_holding = false
 
 func _process(delta: float) -> void:
 	if player_enter and player_ref:
@@ -14,13 +15,15 @@ func _process(delta: float) -> void:
 	else:
 		stealing = false
 		steal_time = 0.0
-
+	
+	
 	if stealing:
 		steal_time += delta
 		$ProgressBar.value = steal_time
 		if steal_time >= steal_duration:
 			emit_signal("stolen_signal")
 			steal_time = 0
+			is_holding= true
 			stealing = false
 			
 

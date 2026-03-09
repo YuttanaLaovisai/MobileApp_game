@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://brrhp7kvf6br2"]
+
+[ext_resource type="Script" uid="uid://dxsxd4tjbfpk6" path="res://gai_bodyguard.gd" id="1_bx1vs"]
+[ext_resource type="Texture2D" uid="uid://b05ix2jisc6i" path="res://asset/idle.png" id="2_1um2w"]
+[ext_resource type="Texture2D" uid="uid://cghuxnqu6a87k" path="res://asset/run1.png" id="3_i3q8a"]
+[ext_resource type="Texture2D" uid="uid://bvgsdnovqdnr5" path="res://asset/run2.png" id="4_8w4cc"]
+[ext_resource type="AudioStream" uid="uid://eqi50mquqc6q" path="res://FootstepSounds/chicken-cluking-type-2-293319.mp3" id="5_4nwmy"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_oi2e6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eugx6"]
+radius = 130.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4eq81"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1um2w")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_i3q8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8w4cc")
+}],
+"loop": true,
+"name": &"run",
+"speed": 3.0
+}]
+
+[node name="gai_bodyguard" type="Node2D" groups=["gai_bodyguard"]]
+z_index = 2
+script = ExtResource("1_bx1vs")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.886275, 0.184314, 0, 0.215686)
+scale = Vector2(260, 260)
+mesh = SubResource("SphereMesh_oi2e6")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_eugx6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4eq81")
+animation = &"run"
+frame_progress = 0.4675
+flip_h = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_4nwmy")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
