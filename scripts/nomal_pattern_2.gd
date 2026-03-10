@@ -18,29 +18,27 @@ var game_over = false
 var is_win = false
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	egg.connect("stolen_signal", Callable(self, "_on_egg_stolen"))
 	for enemy in get_tree().get_nodes_in_group("gai_bodyguard"):
 		enemy.player_caught.connect(_on_player_caught)
-	#gai_bodygard.connect("player_caught", Callable(self, "_on_player_caught"))
 	win.visible = false
 	eggg.visible = false
 	back.focus_mode = Control.FOCUS_NONE
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if is_holding_egg and not audio.playing:
 		audio.play()
 	if game_over and audio.playing:
+		audio.stop()
+	if is_win and audio.playing:
 		audio.stop()
 	
 	if is_holding_egg and not game_over and not is_win: 
 		eggg.visible = true
 		hold_time += delta
 		var s = "%.2f" % hold_time
-		#objective.text = "Objective : Holding egg for "+str(s)+"/"+str(minimum_time)+"s  and run back home."
 	else:
 		eggg.visible = false
 
@@ -51,7 +49,6 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 			GlobleSound.play_sound("res://asset/floraphonic-you-win-sequence-2-183949.mp3")
 			win.visible = true
 			is_win = true
-			
 
 func _on_go_back_pressed() -> void:
 	$"CanvasLayer/go back".visible = false  
