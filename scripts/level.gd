@@ -35,6 +35,7 @@ extends Control
 func _ready() -> void:
 	Global.load_progress()
 	#Global.reset()#อย่าลืมเอาออก
+	Global.unlock_level(30);
 	$CanvasLayer/back.focus_mode = Control.FOCUS_NONE
 	lvl_1.disabled = false
 	lvl_2.disabled = Global.unlocked_levels < 2
@@ -71,31 +72,157 @@ func _on_back_pressed() -> void:
 	GlobleSound.play_sound("res://asset/btnSound.mp3")
 	get_tree().change_scene_to_file("res://scenes/start.tscn")
 
+#=========================================================
 
-func _on_lvl_1_pressed() -> void:
+func _on_lvl_1_pressed() -> void: #1-1
 	GlobleSound.play_sound("res://asset/btnSound.mp3")
 	get_tree().change_scene_to_file("res://scenes/pattern1/nomal_pattern_1.tscn")
 
 
-func _on_lvl_2_pressed() -> void:
+func _on_lvl_2_pressed() -> void: #2-1
 	if Global.unlocked_levels >= 2:
 		GlobleSound.play_sound("res://asset/btnSound.mp3")
-		get_tree().change_scene_to_file("res://scenes/pattern1/nomal_pattern_1_lvl_2.tscn")
+		get_tree().change_scene_to_file("res://scenes/pattern2/nomal_pattern_2.tscn")
 
 
-func _on_lvl_3_pressed() -> void:
+func _on_lvl_3_pressed() -> void: #3-1
 	if Global.unlocked_levels >= 3:
 		GlobleSound.play_sound("res://asset/btnSound.mp3")
-		get_tree().change_scene_to_file("res://scenes/lvl_4.tscn")
+		get_tree().change_scene_to_file("res://scenes/pattern3/nomal_pattern_3.tscn")
 
 
-func _on_lvl_4_pressed() -> void:
+func _on_lvl_4_pressed() -> void: #1-2
 	if Global.unlocked_levels >= 4:
 		GlobleSound.play_sound("res://asset/btnSound.mp3")
 		get_tree().change_scene_to_file("res://scenes/lvl_5.tscn")
 
 
-func _on_lvl_5_pressed() -> void:
+func _on_lvl_5_pressed() -> void: #2-2
 	if Global.unlocked_levels >= 5:
 		GlobleSound.play_sound("res://asset/btnSound.mp3")
-		get_tree().change_scene_to_file("res://scenes/lvl_6.tscn")
+		get_tree().change_scene_to_file("res://scenes/pattern2/nomal_pattern_2_lvl2.tscn")
+
+
+func _on_lvl_6_pressed() -> void: #3-2
+	if Global.unlocked_levels >= 6:
+		pass
+
+
+func _on_lvl_7_pressed() -> void: #1-3
+	if Global.unlocked_levels >= 7:
+		pass
+
+
+func _on_lvl_8_pressed() -> void: #2-3
+	if Global.unlocked_levels >= 8:
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern2/nomal_pattern_2_lvl3.tscn")
+
+
+func _on_lvl_9_pressed() -> void: #3-3
+	if Global.unlocked_levels >= 9:
+		pass
+
+
+func _on_lvl_10_pressed() -> void: #1-4
+	if Global.unlocked_levels >= 10:
+		pass
+
+
+func _on_lvl_11_pressed() -> void: #2-4
+	if Global.unlocked_levels >= 11:
+		pass
+
+
+func _on_lvl_12_pressed() -> void: #3-4
+	if Global.unlocked_levels >= 12:
+		pass
+
+
+func _on_lvl_13_pressed() -> void: #1-5
+	if Global.unlocked_levels >= 13:
+		pass
+
+
+func _on_lvl_14_pressed() -> void: #2-5
+	if Global.unlocked_levels >= 14:
+		pass
+
+
+func _on_lvl_15_pressed() -> void: #3-5
+	if Global.unlocked_levels >= 15:
+		pass
+
+
+func _on_lvl_16_pressed() -> void: #1-6
+	if Global.unlocked_levels >= 16:
+		pass
+
+
+func _on_lvl_17_pressed() -> void: #2-6
+	if Global.unlocked_levels >= 17:
+		pass
+
+
+func _on_lvl_18_pressed() -> void: #3-6
+	if Global.unlocked_levels >= 18:
+		pass
+
+
+func _on_lvl_19_pressed() -> void: #1-7
+	if Global.unlocked_levels >= 19:
+		pass
+
+
+func _on_lvl_20_pressed() -> void: #2-7
+	if Global.unlocked_levels >= 20:
+		pass
+
+func _on_lvl_21_pressed() -> void: #3-7
+	if Global.unlocked_levels >= 21:
+		pass
+
+
+func _on_lvl_22_pressed() -> void: #1-8
+	if Global.unlocked_levels >= 22:
+		pass
+
+
+func _on_lvl_23_pressed() -> void: #2-8
+	if Global.unlocked_levels >= 23:
+		pass
+
+
+func _on_lvl_24_pressed() -> void: #3-8
+	if Global.unlocked_levels >= 24:
+		pass
+
+
+func _on_lvl_25_pressed() -> void: #1-9
+	if Global.unlocked_levels >= 25:
+		pass
+
+
+func _on_lvl_26_pressed() -> void: #2-9
+	if Global.unlocked_levels >= 26:
+		pass
+
+
+func _on_lvl_27_pressed() -> void: #3-9
+	if Global.unlocked_levels >= 27:
+		pass
+
+
+func _on_lvl_28_pressed() -> void: #1-10
+	if Global.unlocked_levels >= 28:
+		pass
+
+
+func _on_lvl_29_pressed() -> void: #2-10
+	if Global.unlocked_levels >= 29:
+		pass
+
+
+func _on_lvl_30_pressed() -> void: #3-10
+	if Global.unlocked_levels >= 30:
+		pass

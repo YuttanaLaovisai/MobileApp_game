@@ -39,7 +39,6 @@ func apply_skin():
 
 
 func _physics_process(delta):
-
 	dir = joystick.get_direction()
 
 	# Keyboard support

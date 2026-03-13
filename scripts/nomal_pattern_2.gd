@@ -7,7 +7,6 @@ extends Node2D
 @onready var eggg = $player/egg
 @onready var objective: Label = $CanvasLayer/objective
 @onready var back: Button = $CanvasLayer/back
-@onready var gai_bodygard: Node2D = $Path2D/PathFollow2D/gai_bodygard
 @onready var audio: AudioStreamPlayer = $AudioStreamPlayer
 
 @export var unlock_level:int
@@ -38,7 +37,6 @@ func _process(delta: float) -> void:
 	if is_holding_egg and not game_over and not is_win: 
 		eggg.visible = true
 		hold_time += delta
-		var s = "%.2f" % hold_time
 	else:
 		eggg.visible = false
 

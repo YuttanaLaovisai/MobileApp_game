@@ -1,21 +1,21 @@
 [gd_scene load_steps=24 format=3 uid="uid://b8t3ka0vvmb2n"]
 
-[ext_resource type="Script" uid="uid://cp3xlinjsknwg" path="res://scripts/nomal_pattern_3.gd" id="1_rm2rd"]
-[ext_resource type="Texture2D" uid="uid://qsse861iocvd" path="res://asset/pixil-frame-0 (2).png" id="2_be5yd"]
-[ext_resource type="FontFile" uid="uid://cys33ha6e3rft" path="res://font/FantasticBoogaloo-GDlq.ttf" id="4_roawl"]
-[ext_resource type="Texture2D" uid="uid://bjfdphrwhf0wp" path="res://asset/grass.png" id="6_c8jil"]
-[ext_resource type="PackedScene" uid="uid://84wow1sehlel" path="res://scenes/player.tscn" id="7_lbvmc"]
-[ext_resource type="Texture2D" uid="uid://d27uw33bkpdef" path="res://asset/pixil-frame-0 (15).png" id="8_denf2"]
-[ext_resource type="Texture2D" uid="uid://dsguv2bs84b0r" path="res://asset/v-fence.png" id="9_1by4g"]
-[ext_resource type="Texture2D" uid="uid://ccalwvfxkgi5q" path="res://asset/fence.png" id="10_gi0ii"]
-[ext_resource type="Texture2D" uid="uid://c26g8q2ocrj6o" path="res://asset/pixil-frame-0 (22).png" id="11_dcjp8"]
-[ext_resource type="Texture2D" uid="uid://8tbfs7mvq28q" path="res://asset/pixil-frame-0 (10).png" id="12_iay7s"]
-[ext_resource type="PackedScene" uid="uid://3xsov5deie5k" path="res://scenes/win_interface.tscn" id="13_le76w"]
-[ext_resource type="AudioStream" uid="uid://2y3pdyatko28" path="res://asset/SUBWAY SURFERS (Main Theme).mp3" id="14_qdbbm"]
-[ext_resource type="PackedScene" uid="uid://do4fcgf73be1r" path="res://scenes/gai_sniper.tscn" id="15_be5yd"]
+[ext_resource type="Script" uid="uid://cp3xlinjsknwg" path="res://scripts/nomal_pattern_3.gd" id="1_w03uf"]
+[ext_resource type="Texture2D" uid="uid://qsse861iocvd" path="res://asset/pixil-frame-0 (2).png" id="2_sbor2"]
+[ext_resource type="Texture2D" uid="uid://bjfdphrwhf0wp" path="res://asset/grass.png" id="3_a68hh"]
+[ext_resource type="PackedScene" uid="uid://84wow1sehlel" path="res://scenes/player.tscn" id="4_70a2r"]
+[ext_resource type="Texture2D" uid="uid://d27uw33bkpdef" path="res://asset/pixil-frame-0 (15).png" id="5_eck7n"]
+[ext_resource type="Texture2D" uid="uid://dsguv2bs84b0r" path="res://asset/v-fence.png" id="6_vb845"]
+[ext_resource type="Texture2D" uid="uid://ccalwvfxkgi5q" path="res://asset/fence.png" id="7_ovutj"]
+[ext_resource type="Texture2D" uid="uid://c26g8q2ocrj6o" path="res://asset/pixil-frame-0 (22).png" id="8_fvoex"]
+[ext_resource type="FontFile" uid="uid://cys33ha6e3rft" path="res://font/FantasticBoogaloo-GDlq.ttf" id="9_rqqhy"]
+[ext_resource type="Texture2D" uid="uid://8tbfs7mvq28q" path="res://asset/pixil-frame-0 (10).png" id="10_uim0o"]
+[ext_resource type="PackedScene" uid="uid://3xsov5deie5k" path="res://scenes/win_interface.tscn" id="11_7ucq6"]
+[ext_resource type="AudioStream" uid="uid://2y3pdyatko28" path="res://asset/SUBWAY SURFERS (Main Theme).mp3" id="12_8pwv4"]
+[ext_resource type="PackedScene" uid="uid://do4fcgf73be1r" path="res://scenes/gai_sniper.tscn" id="13_b5g6l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pnvdl"]
-texture = ExtResource("6_c8jil")
+texture = ExtResource("3_a68hh")
 2:2/0 = 0
 3:2/0 = 0
 2:3/0 = 0
@@ -26,7 +26,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_pnvdl")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kmpww"]
-texture = ExtResource("8_denf2")
+texture = ExtResource("5_eck7n")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8.86364, 50, -1.86603, 26.1244, 10.2632, 7.46412, 23.7919, -9.33014, 36.3876, -17.2608, 50, -17.2608, 50, 50)
@@ -43,7 +43,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_kmpww")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mbkk5"]
-texture = ExtResource("9_1by4g")
+texture = ExtResource("6_vb845")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -40, 0, -40, 0, 40, -12, 40)
@@ -54,7 +54,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_mbkk5")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m8pbg"]
-texture = ExtResource("10_gi0ii")
+texture = ExtResource("7_ovutj")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36, 28, 40, 28, 40, 16, -36, 16)
@@ -76,13 +76,13 @@ agent_radius = 40.0
 size = Vector2(415.563, 445.364)
 
 [node name="nomal_pattern3" type="Node2D"]
-script = ExtResource("1_rm2rd")
+script = ExtResource("1_w03uf")
 speed = 1000.0
 
 [node name="bg" type="Sprite2D" parent="."]
 position = Vector2(-638.999, -24.9999)
 scale = Vector2(333.48, 201.72)
-texture = ExtResource("2_be5yd")
+texture = ExtResource("2_sbor2")
 
 [node name="grass2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_6bajv")
@@ -92,7 +92,7 @@ layer_0/tile_data = PackedInt32Array(-6947060, 131072, 2, -6881524, 131072, 3, -
 [node name="playerHome" type="Marker2D" parent="."]
 position = Vector2(-2297, -253)
 
-[node name="player" parent="." instance=ExtResource("7_lbvmc")]
+[node name="player" parent="." instance=ExtResource("4_70a2r")]
 position = Vector2(-2297, -253)
 speed = 300
 
@@ -121,7 +121,7 @@ navigation_polygon = SubResource("NavigationPolygon_ipj1s")
 [node name="home" type="Sprite2D" parent="."]
 position = Vector2(-239, 5)
 scale = Vector2(0.604, 0.604)
-texture = ExtResource("11_dcjp8")
+texture = ExtResource("8_fvoex")
 
 [node name="Area2D" type="Area2D" parent="home"]
 
@@ -144,16 +144,16 @@ offset_left = 50.0
 offset_top = 50.0
 offset_right = 158.0
 offset_bottom = 158.0
-theme_override_fonts/font = ExtResource("4_roawl")
+theme_override_fonts/font = ExtResource("9_rqqhy")
 theme_override_font_sizes/font_size = 40
 text = "
 "
-icon = ExtResource("12_iay7s")
+icon = ExtResource("10_uim0o")
 flat = true
 icon_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="win_interface" parent="CanvasLayer" instance=ExtResource("13_le76w")]
+[node name="win_interface" parent="CanvasLayer" instance=ExtResource("11_7ucq6")]
 visible = false
 z_index = 1
 lvlPath = "res://scenes/lvl_2.tscn"
@@ -167,7 +167,7 @@ offset_top = 50.0
 offset_right = -50.0
 grow_horizontal = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_roawl")
+theme_override_fonts/font = ExtResource("9_rqqhy")
 theme_override_font_sizes/font_size = 30
 text = "Objective : Do not move during the night."
 metadata/_edit_use_anchors_ = true
@@ -182,9 +182,9 @@ grow_vertical = 2
 color = Color(0, 0, 0, 0.372549)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("14_qdbbm")
+stream = ExtResource("12_8pwv4")
 
-[node name="gai_sniper" parent="." instance=ExtResource("15_be5yd")]
+[node name="gai_sniper" parent="." instance=ExtResource("13_b5g6l")]
 position = Vector2(-2301, -448)
 
 [node name="gai_home" type="Marker2D" parent="."]

@@ -5,23 +5,6 @@
 [ext_resource type="AudioStream" uid="uid://bilj80cva01py" path="res://FootstepSounds/rubber-chicken-96436.mp3" id="3_77yrv"]
 [ext_resource type="AudioStream" uid="uid://eqi50mquqc6q" path="res://FootstepSounds/chicken-cluking-type-2-293319.mp3" id="4_epipo"]
 
-[sub_resource type="Animation" id="Animation_77yrv"]
-resource_name = "spinning_gai"
-length = 0.3
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.15),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 6.28319]
-}
-
 [sub_resource type="Animation" id="Animation_epipo"]
 length = 0.001
 tracks/0/type = "value"
@@ -50,6 +33,23 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_77yrv"]
+resource_name = "spinning_gai"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.28319]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_w34o1"]

@@ -85,6 +85,7 @@ _data = {
 point_count = 3
 
 [node name="nomal_pattern2" type="Node2D"]
+position = Vector2(6, 0)
 script = ExtResource("1_0duka")
 
 [node name="bg" type="Sprite2D" parent="."]
@@ -120,7 +121,7 @@ position = Vector2(-2212, 2)
 
 [node name="player" parent="." instance=ExtResource("7_n104u")]
 position = Vector2(-2212, 2)
-speed = 1100
+speed = 800
 
 [node name="hay" type="TileMap" parent="." groups=["navigation"]]
 z_index = 3
@@ -174,7 +175,7 @@ metadata/_edit_use_anchors_ = true
 [node name="win_interface" parent="CanvasLayer" instance=ExtResource("13_kwdxh")]
 visible = false
 z_index = 1
-lvlPath = "res://scenes/lvl_2.tscn"
+lvlPath = "res://scenes/pattern3/nomal_pattern_3.tscn"
 
 [node name="objective" type="Label" parent="CanvasLayer"]
 anchors_preset = -1
@@ -187,7 +188,7 @@ grow_horizontal = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_glm6i")
 theme_override_font_sizes/font_size = 30
-text = "Objective : Holding egg for 0/30s  and run back home."
+text = "Objective : Don't get caught by the chickens"
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
