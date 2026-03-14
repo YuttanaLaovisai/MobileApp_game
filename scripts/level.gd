@@ -131,7 +131,8 @@ func _on_lvl_10_pressed() -> void: #1-4
 
 func _on_lvl_11_pressed() -> void: #2-4
 	if Global.unlocked_levels >= 11:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern2/nomal_pattern_2_lvl4.tscn")
 
 
 func _on_lvl_12_pressed() -> void: #3-4
@@ -146,7 +147,8 @@ func _on_lvl_13_pressed() -> void: #1-5
 
 func _on_lvl_14_pressed() -> void: #2-5
 	if Global.unlocked_levels >= 14:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern2/nomal_pattern_2_lvl5.tscn")
 
 
 func _on_lvl_15_pressed() -> void: #3-5
@@ -161,7 +163,8 @@ func _on_lvl_16_pressed() -> void: #1-6
 
 func _on_lvl_17_pressed() -> void: #2-6
 	if Global.unlocked_levels >= 17:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern2/nomal_pattern_2_lvl6.tscn")
 
 
 func _on_lvl_18_pressed() -> void: #3-6
@@ -176,7 +179,8 @@ func _on_lvl_19_pressed() -> void: #1-7
 
 func _on_lvl_20_pressed() -> void: #2-7
 	if Global.unlocked_levels >= 20:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern2/nomal_pattern_2_lvl7.tscn")
 
 func _on_lvl_21_pressed() -> void: #3-7
 	if Global.unlocked_levels >= 21:
@@ -190,7 +194,8 @@ func _on_lvl_22_pressed() -> void: #1-8
 
 func _on_lvl_23_pressed() -> void: #2-8
 	if Global.unlocked_levels >= 23:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern2/nomal_pattern_2_lvl8.tscn")
 
 
 func _on_lvl_24_pressed() -> void: #3-8
@@ -205,7 +210,8 @@ func _on_lvl_25_pressed() -> void: #1-9
 
 func _on_lvl_26_pressed() -> void: #2-9
 	if Global.unlocked_levels >= 26:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern2/nomal_pattern_2_lvl9.tscn")
 
 
 func _on_lvl_27_pressed() -> void: #3-9
@@ -220,7 +226,8 @@ func _on_lvl_28_pressed() -> void: #1-10
 
 func _on_lvl_29_pressed() -> void: #2-10
 	if Global.unlocked_levels >= 29:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern2/nomal_pattern_2_lvl10.tscn")
 
 
 func _on_lvl_30_pressed() -> void: #3-10

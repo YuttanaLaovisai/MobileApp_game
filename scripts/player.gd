@@ -3,7 +3,7 @@ extends RigidBody2D
 @export var speed := 1000
 var dir := Vector2.ZERO
 
-@onready var joystick = $"CanvasLayer/Virtual Joystick"
+@onready var joystick = $"CanvasLayer/Container/Virtual Joystick"
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var footstep_sound: AudioStreamPlayer2D = $AudioStreamPlayer2D
 

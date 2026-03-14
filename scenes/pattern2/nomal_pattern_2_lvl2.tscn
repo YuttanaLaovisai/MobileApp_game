@@ -224,7 +224,7 @@ position = Vector2(-1743, -424)
 rotation = -0.0615468
 rotates = false
 script = ExtResource("14_jovhr")
-speed = 3
+speed = 2.0
 
 [node name="gai_bodyguard" parent="Path2D/PathFollow2D" instance=ExtResource("15_u4e36")]
 
@@ -238,7 +238,7 @@ rotation = -0.0615468
 progress = 404.726
 rotates = false
 script = ExtResource("14_jovhr")
-speed = 3
+speed = 2.0
 
 [node name="gai_bodyguard" parent="Path2D2/PathFollow2D" instance=ExtResource("15_u4e36")]
 
@@ -251,7 +251,7 @@ position = Vector2(-1743, -424)
 rotation = -0.0615468
 rotates = false
 script = ExtResource("14_jovhr")
-speed = 3
+speed = 2.0
 
 [node name="gai_bodyguard" parent="Path2D3/PathFollow2D" instance=ExtResource("15_u4e36")]
 
@@ -267,7 +267,7 @@ position = Vector2(208, 29)
 rotation = -0.00225988
 rotates = false
 script = ExtResource("14_jovhr")
-speed = 3
+speed = 3.0
 
 [node name="gai_bodyguard" parent="Path2D4/PathFollow2D" instance=ExtResource("15_u4e36")]
 

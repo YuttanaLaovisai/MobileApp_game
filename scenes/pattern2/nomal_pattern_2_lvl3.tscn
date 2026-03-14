@@ -215,7 +215,7 @@ metadata/_edit_use_anchors_ = true
 [node name="win_interface" parent="CanvasLayer" instance=ExtResource("13_fgh4u")]
 visible = false
 z_index = 1
-lvlPath = "res://scenes/lvl_2.tscn"
+lvlPath = "9"
 
 [node name="objective" type="Label" parent="CanvasLayer"]
 anchors_preset = -1
@@ -249,7 +249,7 @@ position = Vector2(-1596, -436)
 rotation = -0.0615468
 rotates = false
 script = ExtResource("14_7l7xm")
-speed = 2
+speed = 2.0
 
 [node name="gai_bodyguard" parent="Path2D/PathFollow2D" instance=ExtResource("15_qhsk2")]
 
@@ -263,7 +263,7 @@ rotation = -0.0615468
 progress = 404.726
 rotates = false
 script = ExtResource("14_7l7xm")
-speed = 3
+speed = 2.0
 
 [node name="gai_bodyguard" parent="Path2D2/PathFollow2D" instance=ExtResource("15_qhsk2")]
 
@@ -276,7 +276,7 @@ position = Vector2(-2645, -233)
 rotation = -0.0615468
 rotates = false
 script = ExtResource("14_7l7xm")
-speed = 3
+speed = 2.0
 
 [node name="gai_bodyguard" parent="Path2D3/PathFollow2D" instance=ExtResource("15_qhsk2")]
 
@@ -292,7 +292,7 @@ position = Vector2(1073, 47)
 rotation = -0.00225988
 rotates = false
 script = ExtResource("14_7l7xm")
-speed = 3
+speed = 2.0
 
 [node name="gai_bodyguard" parent="Path2D4/PathFollow2D" instance=ExtResource("15_qhsk2")]
 
@@ -305,7 +305,7 @@ position = Vector2(757, -242)
 rotation = -0.00225988
 rotates = false
 script = ExtResource("14_7l7xm")
-speed = 3
+speed = 2.0
 
 [node name="gai_bodyguard" parent="Path2D5/PathFollow2D" instance=ExtResource("15_qhsk2")]
 
@@ -318,7 +318,7 @@ position = Vector2(757, -242)
 rotation = -0.00225988
 rotates = false
 script = ExtResource("14_7l7xm")
-speed = 3
+speed = 2.0
 
 [node name="gai_bodyguard" parent="Path2D6/PathFollow2D" instance=ExtResource("15_qhsk2")]
 
