@@ -71,6 +71,7 @@ func _on_egg_stolen() -> void:
 	hold_time = 0.0
 	chicken.chase = true
 	game_over = false
+	go_back.visible = false
 
 func _on_player_caught() -> void:
 	if not is_holding_egg:
