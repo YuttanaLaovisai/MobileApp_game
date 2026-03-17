@@ -35,7 +35,7 @@ extends Control
 func _ready() -> void:
 	Global.load_progress()
 	#Global.reset()#อย่าลืมเอาออก
-	Global.unlock_level(30);
+	#Global.unlock_level(30);
 	$CanvasLayer/back.focus_mode = Control.FOCUS_NONE
 	lvl_1.disabled = false
 	lvl_2.disabled = Global.unlocked_levels < 2
