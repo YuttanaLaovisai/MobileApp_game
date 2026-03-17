@@ -5,7 +5,6 @@ extends Node2D
 @onready var egg = $egg
 @onready var win: Control = $CanvasLayer/win_interface/CanvasLayer/win
 @onready var eggg = $player/egg
-@onready var objective: Label = $CanvasLayer/objective
 @onready var back: Button = $CanvasLayer/back
 @onready var audio: AudioStreamPlayer = $AudioStreamPlayer
 

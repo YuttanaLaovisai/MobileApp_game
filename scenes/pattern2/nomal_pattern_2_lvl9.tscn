@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://cp2ntgxbijky0"]
+[gd_scene load_steps=31 format=3 uid="uid://cp2ntgxbijky0"]
 
 [ext_resource type="Script" uid="uid://uir5d07cyk0" path="res://scripts/nomal_pattern_2.gd" id="1_x8ggb"]
 [ext_resource type="Texture2D" uid="uid://qsse861iocvd" path="res://asset/pixil-frame-0 (2).png" id="2_d8ixu"]
@@ -7,6 +7,7 @@
 [ext_resource type="FontFile" uid="uid://cys33ha6e3rft" path="res://font/FantasticBoogaloo-GDlq.ttf" id="5_k3yq4"]
 [ext_resource type="PackedScene" uid="uid://bmd2otrm32d65" path="res://scenes/egg.tscn" id="6_cgrwy"]
 [ext_resource type="PackedScene" uid="uid://84wow1sehlel" path="res://scenes/player.tscn" id="7_as3fq"]
+[ext_resource type="Texture2D" uid="uid://ci0g6euqyjkq5" path="res://asset/white-gradient-circle-png.png" id="8_d8ixu"]
 [ext_resource type="Texture2D" uid="uid://d27uw33bkpdef" path="res://asset/pixil-frame-0 (15).png" id="8_gtkek"]
 [ext_resource type="Texture2D" uid="uid://dsguv2bs84b0r" path="res://asset/v-fence.png" id="9_00a1k"]
 [ext_resource type="Texture2D" uid="uid://ccalwvfxkgi5q" path="res://asset/fence.png" id="10_50027"]
@@ -133,6 +134,15 @@ position = Vector2(-4400, -676)
 [node name="player" parent="." instance=ExtResource("7_as3fq")]
 position = Vector2(-4400, -676)
 speed = 800
+
+[node name="CanvasModulate" type="CanvasModulate" parent="player"]
+visible = false
+color = Color(0, 0, 0, 1)
+
+[node name="PointLight2D" type="PointLight2D" parent="player"]
+visible = false
+scale = Vector2(0.891, 0.891)
+texture = ExtResource("8_d8ixu")
 
 [node name="hay" type="TileMap" parent="." groups=["navigation"]]
 z_index = 3

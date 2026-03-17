@@ -217,20 +217,6 @@ visible = false
 z_index = 1
 lvlPath = "9"
 
-[node name="objective" type="Label" parent="CanvasLayer"]
-anchors_preset = -1
-anchor_left = 0.692187
-anchor_right = 1.0
-anchor_bottom = 0.0277778
-offset_top = 50.0
-offset_right = -50.0
-grow_horizontal = 0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_e3wcn")
-theme_override_font_sizes/font_size = 30
-text = "Objective : Don't get caught by the chickens"
-metadata/_edit_use_anchors_ = true
-
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 visible = false
 anchors_preset = 15
@@ -239,6 +225,22 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.372549)
+
+[node name="objective2" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.692187
+anchor_right = 1.0
+anchor_bottom = 0.0277778
+offset_top = 50.0
+offset_right = -50.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_e3wcn")
+theme_override_font_sizes/font_size = 30
+text = "Objective : Don't get caught by the chickens"
+metadata/_edit_use_anchors_ = true
 
 [node name="Path2D" type="Path2D" parent="."]
 position = Vector2(1544, 408)

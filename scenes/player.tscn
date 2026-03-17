@@ -52,7 +52,7 @@ autoplay = true
 parameters/looping = true
 
 [node name="egg" type="Sprite2D" parent="."]
-z_index = 1
+z_index = 4096
 position = Vector2(3, -86)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("6_tuyoq")
