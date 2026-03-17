@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://oo4e2bbm3f5t"]
+[gd_scene load_steps=26 format=3 uid="uid://2vsf8wigi81j"]
 
 [ext_resource type="Script" uid="uid://b7peqjtbb3rct" path="res://nomal_pattern_1.gd" id="1_ngnpi"]
 [ext_resource type="Texture2D" uid="uid://qsse861iocvd" path="res://asset/pixil-frame-0 (2).png" id="2_ifdgd"]
@@ -201,7 +201,7 @@ icon_alignment = 1
 [node name="win_interface" parent="CanvasLayer" instance=ExtResource("15_ih4s3")]
 visible = false
 z_index = 1
-lvlPath = "res://scenes/lvl_2.tscn"
+lvlPath = "res://scenes/pattern2/nomal_pattern_2_lvl5.tscn"
 
 [node name="objective" type="Label" parent="CanvasLayer"]
 anchors_preset = -1

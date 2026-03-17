@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://cb8ab7c3nt8fd"]
+[gd_scene load_steps=26 format=3 uid="uid://c0dm7ceqt0ped"]
 
 [ext_resource type="Script" uid="uid://b7peqjtbb3rct" path="res://nomal_pattern_1.gd" id="1_raybp"]
 [ext_resource type="Texture2D" uid="uid://qsse861iocvd" path="res://asset/pixil-frame-0 (2).png" id="2_2ah6l"]

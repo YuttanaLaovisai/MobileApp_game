@@ -94,7 +94,7 @@ func _on_lvl_3_pressed() -> void: #3-1
 func _on_lvl_4_pressed() -> void: #1-2
 	if Global.unlocked_levels >= 4:
 		GlobleSound.play_sound("res://asset/btnSound.mp3")
-		get_tree().change_scene_to_file("res://scenes/lvl_5.tscn")
+		get_tree().change_scene_to_file("res://scenes/pattern1/nomal_pattern_1_lvl_2.tscn")
 
 
 func _on_lvl_5_pressed() -> void: #2-2
@@ -105,12 +105,14 @@ func _on_lvl_5_pressed() -> void: #2-2
 
 func _on_lvl_6_pressed() -> void: #3-2
 	if Global.unlocked_levels >= 6:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern3/nomal_pattern_3_lvl_2.tscn")
 
 
 func _on_lvl_7_pressed() -> void: #1-3
 	if Global.unlocked_levels >= 7:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern1/nomal_pattern_1_lvl_3.tscn")
 
 
 func _on_lvl_8_pressed() -> void: #2-3
@@ -121,12 +123,14 @@ func _on_lvl_8_pressed() -> void: #2-3
 
 func _on_lvl_9_pressed() -> void: #3-3
 	if Global.unlocked_levels >= 9:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern3/nomal_pattern_3_lvl3.tscn")
 
 
 func _on_lvl_10_pressed() -> void: #1-4
 	if Global.unlocked_levels >= 10:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern1/nomal_pattern_1_lvl_4.tscn")
 
 
 func _on_lvl_11_pressed() -> void: #2-4
@@ -142,7 +146,8 @@ func _on_lvl_12_pressed() -> void: #3-4
 
 func _on_lvl_13_pressed() -> void: #1-5
 	if Global.unlocked_levels >= 13:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern1/nomal_pattern_1_lvl_5.tscn")
 
 
 func _on_lvl_14_pressed() -> void: #2-5
@@ -158,7 +163,8 @@ func _on_lvl_15_pressed() -> void: #3-5
 
 func _on_lvl_16_pressed() -> void: #1-6
 	if Global.unlocked_levels >= 16:
-		pass
+		GlobleSound.play_sound("res://asset/btnSound.mp3")
+		get_tree().change_scene_to_file("res://scenes/pattern1/nomal_pattern_1_lvl_6.tscn")
 
 
 func _on_lvl_17_pressed() -> void: #2-6

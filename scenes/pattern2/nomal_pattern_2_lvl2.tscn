@@ -190,7 +190,7 @@ metadata/_edit_use_anchors_ = true
 [node name="win_interface" parent="CanvasLayer" instance=ExtResource("13_gvbca")]
 visible = false
 z_index = 1
-lvlPath = "res://scenes/lvl_2.tscn"
+lvlPath = "res://scenes/pattern3/nomal_pattern_3_lvl_2.tscn"
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 visible = false

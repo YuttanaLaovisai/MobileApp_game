@@ -31,13 +31,14 @@ func _ready() -> void:
 	go_back.focus_mode = Control.FOCUS_NONE
 	back.focus_mode = Control.FOCUS_NONE
 
+var s
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if is_holding_egg and not game_over and not is_win: 
 		eggg.visible = true
 		hold_time += delta
-		var s = "%.2f" % hold_time
+		s = "%.2f" % hold_time
 		objective.text = "Objective : Holding egg for "+str(s)+"/"+str(minimum_time)+"s  and run back home."
 	else:
 		eggg.visible = false
@@ -77,6 +78,9 @@ func _on_player_caught() -> void:
 	if not is_holding_egg:
 		return
 	game_over = true
+	hold_time = 0
+	s = 0
+	objective.text = "Objective : Holding egg for "+str(s)+"/"+str(minimum_time)+"s  and run back home."
 
 func _on_back_pressed() -> void:
 	GlobleSound.play_sound("res://asset/btnSound.mp3")
