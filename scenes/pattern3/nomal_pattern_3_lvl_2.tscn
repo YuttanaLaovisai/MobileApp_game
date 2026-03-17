@@ -75,7 +75,7 @@ agent_radius = 40.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nj624"]
 size = Vector2(415.563, 445.364)
 
-[node name="nomal_pattern3" type="Node2D"]
+[node name="nomal_pattern7" type="Node2D"]
 script = ExtResource("1_326wa")
 speed = 1000.0
 
@@ -167,6 +167,8 @@ offset_top = 50.0
 offset_right = -50.0
 grow_horizontal = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("9_4ne3b")
 theme_override_font_sizes/font_size = 30
 text = "Objective : Do not move during the night."

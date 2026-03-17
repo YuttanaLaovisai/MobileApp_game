@@ -114,7 +114,7 @@ _data = {
 }
 point_count = 8
 
-[node name="nomal_pattern2" type="Node2D"]
+[node name="nomal_pattern4" type="Node2D"]
 script = ExtResource("1_aetpu")
 
 [node name="bg" type="Sprite2D" parent="."]

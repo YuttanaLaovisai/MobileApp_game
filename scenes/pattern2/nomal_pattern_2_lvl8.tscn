@@ -91,7 +91,7 @@ _data = {
 }
 point_count = 5
 
-[node name="nomal_pattern2" type="Node2D"]
+[node name="nomal_pattern4" type="Node2D"]
 script = ExtResource("1_i4l5j")
 
 [node name="bg" type="Sprite2D" parent="."]
@@ -140,7 +140,7 @@ speed = 800
 color = Color(0, 0, 0, 1)
 
 [node name="PointLight2D" type="PointLight2D" parent="player"]
-scale = Vector2(0.891, 0.891)
+scale = Vector2(1.25, 1.25)
 texture = ExtResource("8_v160k")
 
 [node name="hay" type="TileMap" parent="." groups=["navigation"]]
@@ -264,14 +264,15 @@ speed = 3.0
 stream = ExtResource("16_xx4ud")
 
 [node name="Label2" type="Label" parent="."]
-offset_left = -5134.0
-offset_top = -1790.0
-offset_right = -4865.0
-offset_bottom = -1760.0
+offset_left = -5258.0
+offset_top = -1762.0
+offset_right = -4778.0
+offset_bottom = -1732.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_bdirq")
 theme_override_font_sizes/font_size = 30
-text = "The egg is over here"
+text = "Where Am I?!"
+horizontal_alignment = 1
 
 [connection signal="body_entered" from="home/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="pressed" from="CanvasLayer/back" to="." method="_on_back_pressed"]
