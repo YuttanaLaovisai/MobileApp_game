@@ -156,7 +156,7 @@ metadata/_edit_use_anchors_ = true
 [node name="win_interface" parent="CanvasLayer" instance=ExtResource("11_hcpde")]
 visible = false
 z_index = 1
-lvlPath = "res://scenes/pattern1/nomal_pattern_1_lvl_4.tscn"
+lvlPath = "res://scenes/pattern1/nomal_pattern_1_lvl_7.tscn"
 
 [node name="objective" type="Label" parent="CanvasLayer"]
 anchors_preset = -1

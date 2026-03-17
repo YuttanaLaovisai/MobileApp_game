@@ -207,7 +207,7 @@ expand_mode = 1
 [node name="win_interface" parent="CanvasLayer" instance=ExtResource("13_hq6q1")]
 visible = false
 z_index = 1
-lvlPath = "24"
+lvlPath = "res://scenes/pattern3/nomal_pattern_3_lvl_8.tscn"
 
 [node name="objective" type="Label" parent="CanvasLayer"]
 anchors_preset = -1
