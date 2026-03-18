@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bg3ggsq8580yi"]
+[gd_scene load_steps=24 format=3 uid="uid://tu4p8owf3vxi"]
 
 [ext_resource type="Script" uid="uid://cp3xlinjsknwg" path="res://scripts/nomal_pattern_3.gd" id="1_326wa"]
 [ext_resource type="Texture2D" uid="uid://qsse861iocvd" path="res://asset/pixil-frame-0 (2).png" id="2_y4o00"]
@@ -75,7 +75,7 @@ agent_radius = 40.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nj624"]
 size = Vector2(415.563, 445.364)
 
-[node name="nomal_pattern7" type="Node2D"]
+[node name="nomal_pattern3" type="Node2D"]
 script = ExtResource("1_326wa")
 speed = 1000.0
 
@@ -156,7 +156,7 @@ metadata/_edit_use_anchors_ = true
 [node name="win_interface" parent="CanvasLayer" instance=ExtResource("11_dnn6t")]
 visible = false
 z_index = 1
-lvlPath = "res://scenes/pattern1/nomal_pattern_1_lvl_3.tscn"
+lvlPath = "res://scenes/lvl_2.tscn"
 
 [node name="objective" type="Label" parent="CanvasLayer"]
 anchors_preset = -1
@@ -167,8 +167,6 @@ offset_top = 50.0
 offset_right = -50.0
 grow_horizontal = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("9_4ne3b")
 theme_override_font_sizes/font_size = 30
 text = "Objective : Do not move during the night."
