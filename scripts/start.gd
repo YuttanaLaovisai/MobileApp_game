@@ -14,7 +14,7 @@ var is_first_click = true
 func _ready() -> void:
 	Global.load_progress()
 	print(Global.hightest_score)
-	expert.visible = Global.hightest_score > 10
+	expert.visible = Global.hightest_score > 120
 	Endless.focus_mode = Control.FOCUS_NONE
 	exit.focus_mode = Control.FOCUS_NONE
 	shop.focus_mode = Control.FOCUS_NONE
