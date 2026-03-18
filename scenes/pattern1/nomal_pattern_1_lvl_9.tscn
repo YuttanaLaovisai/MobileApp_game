@@ -202,7 +202,7 @@ icon_alignment = 1
 [node name="win_interface" parent="CanvasLayer" instance=ExtResource("15_tdg1k")]
 visible = false
 z_index = 1
-lvlPath = "res://scenes/lvl_2.tscn"
+lvlPath = "res://scenes/pattern2/nomal_pattern_2_lvl9.tscn"
 
 [node name="objective" type="Label" parent="CanvasLayer"]
 anchors_preset = -1

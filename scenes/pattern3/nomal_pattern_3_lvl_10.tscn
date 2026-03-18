@@ -157,7 +157,7 @@ metadata/_edit_use_anchors_ = true
 [node name="win_interface" parent="CanvasLayer" instance=ExtResource("11_wm1uo")]
 visible = false
 z_index = 1
-lvlPath = "res://scenes/lvl_2.tscn"
+lvlPath = "res://scenes/level.tscn"
 
 [node name="objective" type="Label" parent="CanvasLayer"]
 anchors_preset = -1

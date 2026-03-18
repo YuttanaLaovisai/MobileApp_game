@@ -224,6 +224,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/back"]
 z_index = -1
+layout_mode = 0
 offset_left = -40.0
 offset_top = -18.0
 offset_right = 147.0
