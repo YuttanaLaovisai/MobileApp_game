@@ -93,6 +93,7 @@ point_count = 3
 
 [node name="nomal_pattern2" type="Node2D"]
 script = ExtResource("1_c6i4i")
+unlock_level = 30
 
 [node name="bg" type="Sprite2D" parent="."]
 position = Vector2(-638.999, -24.9999)
@@ -184,6 +185,15 @@ icon = ExtResource("12_pxhbu")
 flat = true
 icon_alignment = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/back"]
+z_index = -1
+offset_left = -40.0
+offset_top = -18.0
+offset_right = 147.0
+offset_bottom = 117.0
+texture = ExtResource("8_qhj7b")
+expand_mode = 1
 
 [node name="win_interface" parent="CanvasLayer" instance=ExtResource("13_ohy0s")]
 visible = false

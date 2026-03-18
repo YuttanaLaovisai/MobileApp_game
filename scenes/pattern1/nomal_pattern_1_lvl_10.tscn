@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://d38vt52nm4vvg"]
+[gd_scene load_steps=26 format=3 uid="uid://fhgvamblcjmt"]
 
 [ext_resource type="Script" uid="uid://b7peqjtbb3rct" path="res://nomal_pattern_1.gd" id="1_qsfhp"]
 [ext_resource type="Texture2D" uid="uid://qsse861iocvd" path="res://asset/pixil-frame-0 (2).png" id="2_bxau2"]
@@ -79,7 +79,7 @@ size = Vector2(415.563, 445.364)
 
 [node name="nomal_pattern1_lvl2" type="Node2D"]
 script = ExtResource("1_qsfhp")
-unlock_level = 2
+unlock_level = 29
 minimum_time = 10.0
 
 [node name="bg" type="Sprite2D" parent="."]
@@ -226,6 +226,7 @@ theme_override_font_sizes/font_size = 30
 text = "6..."
 
 [node name="Label2" type="Label" parent="Label2"]
+layout_mode = 0
 offset_left = 12.0
 offset_top = 718.0
 offset_right = 215.0

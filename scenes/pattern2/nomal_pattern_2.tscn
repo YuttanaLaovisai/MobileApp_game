@@ -85,8 +85,8 @@ _data = {
 point_count = 3
 
 [node name="nomal_pattern2" type="Node2D"]
-position = Vector2(6, 0)
 script = ExtResource("1_0duka")
+unlock_level = 3
 
 [node name="bg" type="Sprite2D" parent="."]
 position = Vector2(-638.999, -24.9999)

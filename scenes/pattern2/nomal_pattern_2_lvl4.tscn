@@ -86,6 +86,7 @@ point_count = 4
 
 [node name="nomal_pattern2" type="Node2D"]
 script = ExtResource("1_i5i63")
+unlock_level = 12
 
 [node name="bg" type="Sprite2D" parent="."]
 position = Vector2(-638.999, -24.9999)

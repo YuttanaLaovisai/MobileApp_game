@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://2fsay4bu5yjq"]
+[gd_scene load_steps=24 format=3 uid="uid://dvu4vkmdqf7ua"]
 
 [ext_resource type="Script" uid="uid://cp3xlinjsknwg" path="res://scripts/nomal_pattern_3.gd" id="1_rea2u"]
 [ext_resource type="Texture2D" uid="uid://qsse861iocvd" path="res://asset/pixil-frame-0 (2).png" id="2_sqq3c"]
@@ -77,6 +77,7 @@ size = Vector2(415.563, 445.364)
 
 [node name="nomal_pattern3" type="Node2D"]
 script = ExtResource("1_rea2u")
+unlock_level = 28
 speed = 1000.0
 
 [node name="bg" type="Sprite2D" parent="."]

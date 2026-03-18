@@ -79,7 +79,7 @@ size = Vector2(415.563, 445.364)
 
 [node name="nomal_pattern1_lvl3" type="Node2D"]
 script = ExtResource("1_raybp")
-unlock_level = 2
+unlock_level = 5
 minimum_time = 10.0
 
 [node name="bg" type="Sprite2D" parent="."]

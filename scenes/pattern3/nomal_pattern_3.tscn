@@ -77,6 +77,7 @@ size = Vector2(415.563, 445.364)
 
 [node name="nomal_pattern7" type="Node2D"]
 script = ExtResource("1_w03uf")
+unlock_level = 4
 speed = 1000.0
 
 [node name="bg" type="Sprite2D" parent="."]
